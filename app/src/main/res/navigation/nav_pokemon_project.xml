@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_pokemon_project"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pokemon.project.home.ui.principal.HomeFragment"
+        android:label="Lista de pokemones"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.pokemon.project.home.ui.detail.DetailFragment"
+        android:label="Detalle del pokemon"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_abilitiesFragment"
+            app:destination="@id/abilitiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/abilitiesFragment"
+        android:name="com.pokemon.project.home.ui.abilities.AbilitiesFragment"
+        android:label="AbilitiesFragment"
+        tools:layout="@layout/abilities_fragment"/>
+</navigation>

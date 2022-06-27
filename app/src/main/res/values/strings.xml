@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PokemonProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="felicidad_base">Felicidad base: %s</string>
+    <string name="captura">Tase de captura: %s</string>
+    <string name="color">Color: %s</string>
+
+</resources>
